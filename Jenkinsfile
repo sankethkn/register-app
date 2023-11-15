@@ -22,7 +22,7 @@ pipeline {
 
         stage("Checkout from SCM"){
                 steps {
-                    git credentialsId: 'github', url: 'https://github.com/sankethkn/spark-java.git'
+                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/sankethkn/register-app.git'
                 }
         }
 
